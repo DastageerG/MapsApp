@@ -10,20 +10,27 @@
         android:id="@+id/editTextSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="enter Location name"
+        android:layout_toStartOf="@id/imageViewSearchButton"
         />
-    <FrameLayout
+
+    <ImageView
+        android:id="@+id/imageViewSearchButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_search_24"
+        android:onClick="searchLocation"
+        />
+    <fragment
         android:id="@+id/main_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/editTextSearch"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        >
-        <com.google.android.gms.maps.MapView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/mainActivityMapView"
-            />
-    </FrameLayout>
+        class="com.google.android.gms.maps.SupportMapFragment"
+    />
 
 </RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="None"
+        android:id="@+id/map_menu_none"
+        android:orderInCategory="100"
+        />
+
+    <item android:title="Normal"
+        android:id="@+id/map_menu_normal"
+        android:orderInCategory="100"
+
+        />
+
+    <item android:title="Satellite"
+        android:id="@+id/map_menu_satellite"
+        android:orderInCategory="100"
+
+        />
+
+    <item android:title="Terrain"
+        android:id="@+id/map_menu_terrain"
+        android:orderInCategory="100"
+        />
+
+    <item android:title="Hybrid"
+        android:id="@+id/map_menu_hybrid"
+        android:orderInCategory="100"
+        />
+
+</menu>
